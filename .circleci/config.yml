@@ -1,7 +1,7 @@
 version: 2.1 # circleci版本
 jobs:
   build:
-    doker:
+    docker:
       - image: cimg/node:14.10.1 # 主容器 在其中运行命令
     steps:
       - checkout # 检查项目目录中的代码
