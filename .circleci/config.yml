@@ -1,5 +1,4 @@
-version:2.1 #circleci版本
-
+version: 2.1 # circleci版本
 jobs:
   build:
     doker:
