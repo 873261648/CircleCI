@@ -4,9 +4,9 @@ jobs:
     docker:
       - image: circleci/node:14.10.1 # 主容器 在其中运行命令
     steps:
-      - add_ssh_keys:
-        - fingerprints:
-          - "18:3e:40:e7:af:ee:76:0f:f7:90:6f:aa:9d:f3:ae:d9" # 设置用户密钥，赋予其写入和访问私有仓库的权限
+      - add_ssh_keys: 
+          fingerprints: 
+            - "18:3e:40:e7:af:ee:76:0f:f7:90:6f:aa:9d:f3:ae:d9" # 设置用户密钥，赋予其写入和访问私有仓库的权限
       - checkout # 检出代码
       - run: 
           name: Install
