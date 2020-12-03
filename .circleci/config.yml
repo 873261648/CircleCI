@@ -5,5 +5,5 @@ jobs:
       - image: cimg/node:14.10.1 # 主容器 在其中运行命令
     steps:
       - checkout # 检查项目目录中的代码
-      - run: echo "hello world"
+      - run: echo "hello CircelCI"
       - run: node -v
