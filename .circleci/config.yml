@@ -22,7 +22,7 @@ jobs:
           command: npm run build
       - run:
           name: Deploy shell commands
-          command: chmod +x ./scripts/deploys.sh #赋予sh执行权限
+          command: chmod +x ./scripts/deploy.sh #赋予sh执行权限
       - run:
           name: Run Deploy to Github Pages
-          command: ./scripts/deploys.sh #执行脚本发布到github pages
+          command: ./scripts/deploy.sh #执行脚本发布到github pages
