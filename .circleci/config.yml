@@ -20,3 +20,9 @@ jobs:
       - run:
           name: Build
           command: npm run build
+      - run:
+          name: Deploy shell commands
+          command: chmod +x scripts/deploys.sh #赋予sh执行权限
+      - run:
+          name: Run Deploy to Github Pages
+          command: ./scripts/deploys.sh #执行脚本发布到github pages
